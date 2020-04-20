@@ -136,17 +136,17 @@ public class EncountersFragment extends Fragment implements StandardNPCIFirebase
         Iterator hmIterator = currentParty.getPlayers().entrySet().iterator();
         while (hmIterator.hasNext()) {
             Map.Entry mapElement = (Map.Entry)hmIterator.next();
-            participants.add(new EncounterParticipant((String)mapElement.getValue()));
+            participants.add(new EncounterParticipant((String)mapElement.getValue(), "0"));
         }
         for(SearchableSpinner thisCustSpin : customNPCSpinners)
         {
             CustomNPC thisCustNPC = customNPCList.get(thisCustSpin.getSelectedItemPosition());
-            participants.add(new EncounterParticipant(thisCustNPC.getName()));
+            participants.add(new EncounterParticipant(thisCustNPC.getName(), Integer.toString(thisCustNPC.getHp())));
         }
         for(SearchableSpinner thisStandSpin : standardNPCSpinners)
         {
             StandardNPC thisStandNPC = standardNPCSList.get(thisStandSpin.getSelectedItemPosition());
-            participants.add(new EncounterParticipant(thisStandNPC.getName()));
+            participants.add(new EncounterParticipant(thisStandNPC.getName(), thisStandNPC.getHp()));
         }
         Encounter thisEncounter = new Encounter(participants);
         Intent intent = new Intent(getActivity(), EnterInitiativeActivity.class);

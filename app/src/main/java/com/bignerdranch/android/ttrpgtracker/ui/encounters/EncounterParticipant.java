@@ -5,6 +5,8 @@ import java.io.Serializable;
 public class EncounterParticipant implements Serializable, Comparable<EncounterParticipant>{
     private String name;
     private String initiative = "";
+    private String hp = "";
+    private boolean expanded;
     private boolean blindedImmunity = false;
     private boolean charmedImmunity = false;
     private boolean deafenedImmunity = false;
@@ -36,9 +38,11 @@ public class EncounterParticipant implements Serializable, Comparable<EncounterP
     private boolean stunned = false;
     private boolean unconscious = false;
 
-    public EncounterParticipant(String name)
+    public EncounterParticipant(String name, String hp)
     {
         this.name = name;
+        this.hp = hp;
+        this.expanded = false;
     }
 
     public String getName() {
@@ -55,6 +59,14 @@ public class EncounterParticipant implements Serializable, Comparable<EncounterP
 
     public void setInitiative(String initiative) {
         this.initiative = initiative;
+    }
+
+    public String getHp() {
+        return hp;
+    }
+
+    public void setHp(String hp) {
+        this.hp = hp;
     }
 
     public boolean isBlindedImmunity() {
@@ -295,6 +307,14 @@ public class EncounterParticipant implements Serializable, Comparable<EncounterP
 
     public void setUnconscious(boolean unconscious) {
         this.unconscious = unconscious;
+    }
+
+    public boolean isExpanded() {
+        return expanded;
+    }
+
+    public void setExpanded(boolean expanded) {
+        this.expanded = expanded;
     }
 
     @Override

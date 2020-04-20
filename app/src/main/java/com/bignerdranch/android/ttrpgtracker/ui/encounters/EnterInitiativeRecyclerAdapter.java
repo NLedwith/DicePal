@@ -97,6 +97,4 @@ public class EnterInitiativeRecyclerAdapter extends RecyclerView.Adapter<com.big
             });
         }
     }
-
-
 }
