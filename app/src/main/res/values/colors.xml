@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EAA221</color>
+    <color name="colorPrimaryDark">#D08C14</color>
+    <color name="colorAccent">#808000</color>
+    <color name="buttonGo">#77dd77</color>
+    <color name="hyperlinkBlue">#0000EE</color>
+    <color name="removeItem">#ff6961</color>
+    <color name="editItem">#aec6cf</color>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_encounters">
+
+    <fragment
+        android:id="@+id/nav_encounters"
+        android:name="com.bignerdranch.android.ttrpgtracker.ui.encounters.EncountersFragment"
+        android:label="@string/menu_encounters"
+        tools:layout="@layout/fragment_encounters">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.bignerdranch.android.ttrpgtracker.ui.encounters.EncountersFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_encounters">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_encounters" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_parties"
+        android:name="com.bignerdranch.android.ttrpgtracker.ui.parties.PartiesFragment"
+        android:label="@string/menu_parties"
+        tools:layout="@layout/fragment_parties" />
+
+    <fragment
+        android:id="@+id/nav_npcs"
+        android:name="com.bignerdranch.android.ttrpgtracker.ui.npcs.NPCSFragment"
+        android:label="@string/menu_npcs"
+        tools:layout="@layout/fragment_npcs" />
+
+    <fragment
+        android:id="@+id/nav_rolldice"
+        android:name="com.bignerdranch.android.ttrpgtracker.ui.rolldice.RollDiceFragment"
+        android:label="@string/menu_rolldice"
+        tools:layout="@layout/fragment_rolldice" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.bignerdranch.android.ttrpgtracker.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

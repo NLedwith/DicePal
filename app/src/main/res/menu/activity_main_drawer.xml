@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_encounters"
+            android:icon="@drawable/ic_encounter"
+            android:title="@string/menu_encounters" />
+        <item
+            android:id="@+id/nav_parties"
+            android:icon="@drawable/ic_parties"
+            android:title="@string/menu_parties" />
+        <item
+            android:id="@+id/nav_npcs"
+            android:icon="@drawable/ic_npcs"
+            android:title="@string/menu_npcs" />
+        <item
+            android:id="@+id/nav_rolldice"
+            android:icon="@drawable/ic_dice"
+            android:title="@string/menu_rolldice" />
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>

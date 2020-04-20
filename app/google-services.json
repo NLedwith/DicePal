@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "910760273600",
+    "firebase_url": "https://ttrpg-initiative-tracker.firebaseio.com",
+    "project_id": "ttrpg-initiative-tracker",
+    "storage_bucket": "ttrpg-initiative-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910760273600:android:52df8e2ec368ed5a50ef25",
+        "android_client_info": {
+          "package_name": "com.CoolWithWhatever.ttrpginitiativetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910760273600-df8n3iao4do40vv6ud43g54al72kbpl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.CoolWithWhatever.ttrpginitiativetracker",
+            "certificate_hash": "dd666fd31470ee99a6ea1cac70e5432dec6e0fad"
+          }
+        },
+        {
+          "client_id": "910760273600-ml8klhcp4rdiqcd9ovnrpjse9uusu106.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3JcDcQ8Ng4WE6qvDK35Gn3lDcbZljd30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910760273600-ml8klhcp4rdiqcd9ovnrpjse9uusu106.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910760273600:android:df6c889b0703da4350ef25",
+        "android_client_info": {
+          "package_name": "com.bignerdranch.android.ttrpgtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910760273600-ml8klhcp4rdiqcd9ovnrpjse9uusu106.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3JcDcQ8Ng4WE6qvDK35Gn3lDcbZljd30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910760273600-ml8klhcp4rdiqcd9ovnrpjse9uusu106.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
